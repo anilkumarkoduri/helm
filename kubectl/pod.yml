@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webservice
+spec:
+  containers:
+  - name: httpd
+    image: skalluru/webservice:v1
+    ports:
+    - containerPort: 80
+
